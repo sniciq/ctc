@@ -220,6 +220,7 @@ ms.office.app = Ext.extend(Ext.util.Observable, {
                     	iconCls: 'logout',
                     	xtype: 'button',
                     	text: '退出系统',
+                    	scope: this,
                     	handler: function() {
 				        	Ext.MessageBox.confirm('提示',"确定退出登录？？", function(btn) {
 								if(btn != 'yes') {
@@ -227,18 +228,18 @@ ms.office.app = Ext.extend(Ext.util.Observable, {
 								}
 								Ext.Ajax.request({
 									method: 'POST',
-									url: this.logoutUrl,
+									url: myApp.logoutUrl,
 									success:function(resp){
 										var obj=Ext.util.JSON.decode(resp.responseText);
 								      	if(obj.result == 'success') {
-								      		top.location.href="http://10.103.51.107/logout";
+								      		top.location.href="../index.html";
 								      	}
 								      	else {
 								      		Ext.MessageBox.alert('报错了！！！', '错误！！！');
 								      	}
 									}
 								})
-							});
+							}, this);
 				        }
                     }]
 	            }
