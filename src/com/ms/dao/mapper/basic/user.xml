@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper    PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"    "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.ms.dao.mapper.basic.UserDao">
+
+	<insert id="insert" parameterType="com.ms.dao.entity.basic.UserEty">
+		insert into user(
+			id,userName,password,realName,email,sex,birthday,userCode)
+		values (
+			#{id},#{userName},#{password},#{realName},#{email},#{sex},#{birthday},#{userCode}
+		)
+	</insert>
+
+	<select id="selectByEntity" parameterType="com.ms.dao.entity.basic.UserEty" resultType="com.ms.dao.entity.basic.UserEty">
+		SELECT * from user
+		WHERE 1=1 
+		<if test="id != null "> AND id=#{id}</if>
+		<if test="userName != null  and userName != ''"> AND userName=#{userName}</if>
+		<if test="password != null  and password != ''"> AND password=#{password}</if>
+		<if test="realName != null  and realName != ''"> AND realName=#{realName}</if>
+		<if test="email != null  and email != ''"> AND email=#{email}</if>
+		<if test="sex != null  and sex != ''"> AND sex=#{sex}</if>
+		<if test="birthday != null "> AND birthday=#{birthday}</if>
+		<if test="userCode != null  and userCode != ''"> AND userCode=#{userCode}</if>
+	</select>
+
+	<update id="updateById" parameterType="com.ms.dao.entity.basic.UserEty">
+		UPDATE user SET
+		<if test="id != null">id=#{id},</if>
+		<if test="userName != null">userName=#{userName},</if>
+		<if test="password != null">password=#{password},</if>
+		<if test="realName != null">realName=#{realName},</if>
+		<if test="email != null">email=#{email},</if>
+		<if test="sex != null">sex=#{sex},</if>
+		<if test="birthday != null">birthday=#{birthday},</if>
+		<if test="userCode != null">userCode=#{userCode},</if>
+		 id=#{id}
+		WHERE
+		 id=#{id}
+	</update>
+
+	<select id="selectById" parameterType="int" resultType="com.ms.dao.entity.basic.UserEty">
+		select * from user where id=#{id}
+	</select>
+
+	<delete id="deleteById" parameterType="int">
+		DELETE FROM user WHERE id=#{id}
+	</delete>
+
+	<select id="selectLimitCount" parameterType="com.ms.dao.entity.basic.UserEty" resultType="java.lang.Integer">
+		SELECT count(1) from user
+		WHERE 1=1 
+		<if test="id != null "> AND id=#{id}</if>
+		<if test="userName != null  and userName != ''"> AND userName=#{userName}</if>
+		<if test="password != null  and password != ''"> AND password=#{password}</if>
+		<if test="realName != null  and realName != ''"> AND realName=#{realName}</if>
+		<if test="email != null  and email != ''"> AND email=#{email}</if>
+		<if test="sex != null  and sex != ''"> AND sex=#{sex}</if>
+		<if test="birthday != null "> AND birthday=#{birthday}</if>
+		<if test="userCode != null  and userCode != ''"> AND userCode=#{userCode}</if>
+	</select>
+
+	<select id="selectByLimit" parameterType="com.ms.dao.entity.basic.UserEty" resultType="com.ms.dao.entity.basic.UserEty">
+		SELECT * from user
+		WHERE 1=1 
+		<if test="id != null "> AND id=#{id}</if>
+		<if test="userName != null  and userName != ''"> AND userName=#{userName}</if>
+		<if test="password != null  and password != ''"> AND password=#{password}</if>
+		<if test="realName != null  and realName != ''"> AND realName=#{realName}</if>
+		<if test="email != null  and email != ''"> AND email=#{email}</if>
+		<if test="sex != null  and sex != ''"> AND sex=#{sex}</if>
+		<if test="birthday != null "> AND birthday=#{birthday}</if>
+		<if test="userCode != null  and userCode != ''"> AND userCode=#{userCode}</if>
+		<if test="extLimit.sort != null">order by ${extLimit.sort} ${extLimit.dir}</if>
+		<if test="extLimit.limit != null"> limit ${extLimit.start}, ${extLimit.limit}</if>
+	</select>
+	
+</mapper>
