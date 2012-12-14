@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+<!DOCTYPE configuration   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<mappers>
+		<mapper resource="com/ms/dao/mapper/basic/user.xml"/>
+		<mapper resource="com/ms/dao/mapper/basic/resource.xml"/>
+		<mapper resource="com/ms/dao/mapper/basic/roleresource.xml"/>
+		<mapper resource="com/ms/dao/mapper/basic/role.xml"/>
+		<mapper resource="com/ms/dao/mapper/basic/userrole.xml"/>
+	</mappers>
+</configuration>

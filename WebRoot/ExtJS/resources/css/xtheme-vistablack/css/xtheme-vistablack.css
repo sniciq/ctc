@@ -1,0 +1,1159 @@
+/*
+ * qWikiOffice Desktop 0.7
+ * Copyright(c) 2007-2008, Integrated Technologies, Inc.
+ * licensing@qwikioffice.com
+ * 
+ * http://www.qwikioffice.com/license
+ */
+
+/* Begin: accordion */
+.x-accordion-hd {
+	background:#f1f1f1 none;
+}
+/* End: accordion */
+
+/*树的头部背景 start*/
+.wgos-tree .x-panel-header{
+	color:black;
+	font-weight:normal;
+}
+/*树的头部背景 end*/
+
+
+.x-border-layout-ct {
+    background-color:#f0f0f0;
+}
+
+/* Begin: message box */
+.x-window-dlg .desktop-download {
+	background:transparent url(../images/icons/download.gif) no-repeat top left;
+	height:46px;
+}
+/*
+.x-window-dlg .x-window-body {
+	background:#44474b none !important;
+	color:#fff;
+}
+*/
+/* End: message box */
+
+
+/* Begin: startbutton */
+.ux-taskbar-start .x-btn-menu-active .start,
+.ux-taskbar-start .x-btn-over .start
+{
+	/*background-image: url(../images/taskbar/new-start-btn/start-active-btn.gif) !important;*/
+}
+.ux-taskbar-start .x-btn-left{
+	
+/*
+	background:url(../images/taskbar/startbutton.gif) no-repeat 0 0;
+yzh*/
+}
+.ux-taskbar-start .x-btn-right{
+/*
+	background:url(../images/taskbar/startbutton.gif) no-repeat 0 -30px;
+	yzh*/
+}
+.ux-taskbar-start .x-btn-left,
+.ux-taskbar-start .x-btn-right,
+.ux-taskbar-start .x-btn-right i,
+.ux-taskbar-start .x-btn-left i{/*yzh 增加*/
+	width:0 !important;
+	overflow:hidden !important;
+}
+.ux-taskbar-start .active-win  .x-btn-right{
+	background:url(../images/taskbar/startbutton.gif) no-repeat 0 -120px;
+}
+.ux-taskbar-start .active-win .x-btn-center{
+	background:url(../images/taskbar/startbutton.gif) repeat-x 0 -150px;
+}
+/* End: startbutton */
+
+
+
+/* Begin: startmenu */
+/*
+.ux-start-menu-tl {
+	background: transparent url(../images/startmenu/left-corners.png) no-repeat 0 0;
+}
+.ux-start-menu-tr {
+	background: transparent url(../images/startmenu/right-corners.png) no-repeat right 0;
+}
+.ux-start-menu-tc {
+	background: transparent url(../images/startmenu/top-bottom.png) repeat-x 0 0;
+}
+.ux-start-menu-ml {
+	background: transparent url(../images/startmenu/left-right.png) repeat-y 0 0;
+}
+.ux-start-menu-bc {
+	background: transparent url(../images/startmenu/top-bottom.png) repeat-x 0 bottom;
+}
+.ux-start-menu-bl {
+	background: transparent url(../images/startmenu/left-corners.png) no-repeat 0 bottom;
+}
+.ux-start-menu-br {
+	background: transparent url(../images/startmenu/right-corners.png) no-repeat right bottom;
+}
+.ux-start-menu-tools-panel {
+	background:transparent url(../images/startmenu/right.png) repeat-y scroll right 0pt;
+}
+*/
+/*开始菜单底部面板*/
+/*
+.ux-start-menu-bottom-panel {
+	background:transparent url(../images/startmenu/start-bottom-right.png) repeat-y scroll right 0pt !important;
+}
+/*开始菜单底部面板*/
+/*
+.ux-start-menu-apps-panel {
+	border:1px solid #1e2124;
+}
+.ux-start-menu-apps-panel .x-menu-item-active {
+	background: #f5f8fb url(../images/startmenu/app-item-over.gif) repeat-x left bottom !important;
+	border:
+}
+*/
+/* End: startmenu */
+
+
+
+/* Begin: startmenu tool */
+/*
+.ux-start-menu-tools-panel .x-btn-left{
+	background:url(../images/startmenu/tool.png) no-repeat 0 -81px;
+}
+.ux-start-menu-tools-panel .x-btn-right{
+	background:url(../images/startmenu/tool.png) no-repeat 0 -81px;
+}
+.ux-start-menu-tools-panel .x-btn-center{
+	background:url(../images/startmenu/tool.png) repeat-x 0 -81px;
+}
+*/
+/* End: startmenu tool */
+
+
+
+
+
+
+/* Begin: taskbar */
+.ux-taskbuttons-panel {
+	padding-top:0;
+	position:relative;
+}
+
+.ux-taskbar .x-splitbar-h {
+	width:14px;
+}
+
+.ux-taskbar { 
+	background:transparent none;
+	 height:35px; 
+	 margin:0; 
+	 padding:0;
+	  position:relative; z-index:8999; 
+ }
+.ux-taskbar-start .x-btn-center{
+	background-image:url(../images/taskbar/start-btn-bg-35.png) !important;/*yzh*/
+	}
+
+.ux-taskbar-start ,
+.ux-quickstart-panel,
+.ux-taskbuttons-panel{
+	background:transparent url(../images/taskbar/taskbar-bg.png) repeat-x left top;
+}
+.ux-taskbar .x-splitbar-h {
+	background:transparent url(../images/taskbar/taskbar-split-h-35.png) no-repeat 0 0;
+	width:14px;
+}
+/* End: taskbar */
+
+
+
+/* Begin: taskbutton */
+ul.ux-taskbuttons-strip li {
+    float:left;
+    margin-left:2px;
+}
+ul.ux-taskbuttons-strip {
+	display:block;
+	width:5000px;
+    zoom:1;
+}
+.ux-taskbuttons-strip-wrap {
+	/* overflow:hidden;
+	position:relative;
+	width:100%; */
+	
+	width:100%;
+    overflow:hidden;
+    position:relative;
+    zoom:1;
+}
+
+.ux-taskbar .x-btn { float: left; position:relative; }
+#ux-taskbar-start .x-btn {
+	margin-left: 8px;
+}
+.ux-taskbar button { 
+	color: #ffffff; text-align: left; height:35px;
+}
+.ux-taskbuttons-panel .x-btn-left,
+.ux-taskbuttons-panel .x-btn-right,
+.ux-taskbuttons-panel .x-btn-center,
+.ux-quickstart-panel .x-btn-left,
+.ux-quickstart-panel .x-btn-right,
+.ux-quickstart-panel .x-btn-center{
+	background-image:url(../images/taskbar/taskbar-buttons-35.png) ;
+	background-repeat:no-repeat;
+	width: 5px; 
+	font-size:1px /*ie7*/
+}
+
+.ux-taskbuttons-panel .x-btn-left{
+	background-position: 0 0;
+}
+.ux-taskbuttons-panel .x-btn-right{
+	background-position: 0 -36px;
+	
+}
+.ux-taskbuttons-panel .x-btn-center,
+.ux-quickstart-panel .x-btn-center{
+	background-position: 0 -72px;
+	background-repeat:repeat-x
+}
+.ux-taskbuttons-panel .x-btn-text-icon .x-btn-center .x-btn-text { 
+	background-position: 0 10px; 
+	background-repeat: no-repeat;
+	padding: 7px 0px 7px 20px; 
+	overflow: hidden; 
+	
+}
+.ext-ie7 .ux-taskbuttons-panel .x-btn-text-icon .x-btn-center .x-btn-text,
+.ext-ie8 .ux-taskbuttons-panel .x-btn-text-icon .x-btn-center .x-btn-text{
+	line-height:25px
+}
+.ux-taskbuttons-panel .x-btn-over .x-btn-left ,
+.ux-quickstart-panel .x-btn-over  .x-btn-left,
+.ux-quickstart-panel .x-btn-menu-active .x-btn-left{ 
+	background-position: 0 -108px; 
+}
+.ux-taskbuttons-panel .x-btn-over .x-btn-right,
+.ux-quickstart-panel .x-btn-over  .x-btn-right ,
+.ux-quickstart-panel .x-btn-menu-active .x-btn-right{
+	background-position: 0 -144px; 
+}
+.ux-taskbuttons-panel .x-btn-over .x-btn-center ,
+.ux-quickstart-panel .x-btn-over  .x-btn-center,
+.ux-quickstart-panel .x-btn-menu-active .x-btn-center{
+ 	background-position: 0 -180px; 
+ }
+.ux-taskbuttons-panel .active-win .x-btn-right,
+.ux-quickstart-panel .x-btn-click .x-btn-right {
+	background-position: 0 -252px;
+}
+.ux-taskbuttons-panel .active-win .x-btn-left,
+.ux-quickstart-panel .x-btn-click .x-btn-left {
+	background-position: 0 -216px; 
+}
+.ux-taskbuttons-panel .active-win .x-btn-center ,
+.ux-quickstart-panel .x-btn-click .x-btn-center{ 
+	background-position: 0 -288px;
+ }
+.ux-taskbuttons-panel .active-win .x-btn-center button { color: #fff; }
+/* End: taskbutton */
+
+.ux-taskbar-start {
+	padding:0;
+}
+/*begin 任务栏窗口按钮 溢出滚动条*/
+.x-taskbuttons-scrolling {
+	position:relative;
+}
+
+.x-taskbuttons-scrolling .ux-taskbuttons-strip-wrap {
+	margin-left:18px;
+	margin-right:18px;
+}
+td.ux-taskButtons-edge {
+    /*float:left;*/
+    margin:0 !important;
+    padding:0 !important;
+    border:0 none !important;
+    font-size:1px !important;
+    line-height:1px !important;
+    overflow:hidden;
+    zoom:1;
+    background:transparent !important;
+    width:1px;
+}
+.ux-taskbuttons-scroller-left {
+    background: transparent url(../images/taskbar/scroll-left-35.png) no-repeat -18px 0;
+    width:18px;
+    position:absolute;
+    left:1px;
+    top:0px;
+    z-index:10;
+    cursor:pointer;
+}
+.ux-taskbuttons-scroller-left-over {
+    background-position: 0 0;
+}
+.ux-taskbuttons-scroller-left-disabled {
+    background-position: -18px 0;
+    opacity:.5;
+    -moz-opacity:.5;
+    /*filter:alpha(opacity=50);*/
+    cursor:default;
+}
+.ux-taskbuttons-scroller-right {
+    background: transparent url(../images/taskbar/scroll-right-35.png) no-repeat 0 0;
+    width:18px;
+    position:absolute;
+    right:0;
+    top:0px;
+    z-index:10;
+    cursor:pointer;
+}
+.ux-taskbuttons-scroller-right-over {
+    background-position: -18px 0;
+}
+.ux-taskbuttons-scroller-right-disabled {
+    background-position: 0 0;
+    opacity:.5;
+    -moz-opacity:.5;
+    /*filter:alpha(opacity=50);*/
+    cursor:default;
+}
+
+.ux-toolmenu-sep {
+	background-color:#18191a;
+	border-bottom:1px solid #858789;
+	display:block;
+	font-size:1px;
+	line-height:1px;
+	margin:2px 3px;
+}
+
+/*end 任务栏窗口按钮 溢出滚动条*/
+/* Begin: quickstart button */
+ul.ux-quickstart-strip {
+	display:block;
+	width:5000px;
+    zoom:1;
+}
+
+ul.ux-quickstart-strip li {
+    float:left;
+    margin-left:0px;
+}
+
+
+ul.ux-quickstart-strip li.ux-quickstart-edge {
+    float:left;
+    margin:0 !important;
+    padding:0 !important;
+    border:0 none !important;
+    font-size:1px !important;
+    line-height:1px !important;
+    overflow:hidden;
+    zoom:1;
+    background:transparent !important;
+    width:1px;
+}
+
+.ux-quickstart-strip-wrap {
+	width:100%;
+    overflow:hidden;
+    position:relative;
+    zoom:1;
+}
+
+.ux-quickstart-panel {
+	padding:0;
+}
+
+.ux-quickstart-menubutton-wrap {
+    position:absolute;
+    right:0;
+    top:0px;
+    z-index:10;
+}
+.quickstart-menubutton{/*yzh*/
+	width:8px !important;
+	background-image:url(../../../images/default/taskbar/quickstart-menubutton-icon.gif) !important;
+}
+
+.ux-quickstart-panel .x-btn-icon .x-btn-center .x-btn-text{
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 16px;
+	cursor:pointer;
+	white-space: nowrap;
+    padding:0;
+}
+.ux-quickstart-panel .x-btn-left i, .ux-quickstart-panel .x-btn-right i{
+	display:block;
+    width:4px;
+    overflow:hidden;
+    font-size:1px;
+    line-height:1px;
+}
+.ux-quickstart-panel .x-btn-center{
+	
+	background-position:0 -56px;
+	background-repeat:repeat-x;
+	vertical-align: middle;
+	text-align:center;
+	padding:0;
+	cursor:pointer;
+	white-space:nowrap;
+}
+
+.ux-quickstart-panel .x-btn-left,
+.ux-quickstart-panel .x-btn-right,
+.ux-quickstart-panel .x-btn-center{
+	background-position:-10000px -10000px
+}
+/* End: quickstart button */
+
+
+
+/*yzh*/
+.ux-start-menu .x-window-bwrap{
+	z-index:auto
+}
+
+.db-progress-bar div{
+	background:transparent url(../images/icons/ajax-loader.gif) no-repeat scroll 0 0 !important;
+}
+
+
+.ux-start-menu-bottom-panel .close-btn{
+	background-image:url(../../../images/default/startmenu/closeWin-24x24.png)
+}
+.ux-start-menu-bottom-panel .re-btn{
+	background-image:url(../../../images/default/startmenu/reWin-24x24.png)
+}
+.ux-start-menu-bottom-panel .lock-btn{/*LGL新增(2011-04-06):追加锁屏*/ 
+background-image:url(../../../images/default/startmenu/lock-24x24.png) ;; 
+}
+
+/*新开始菜单样式 start*/
+.ux-start-menu-apps-panel .x-menu-item-icon {
+	height:32px;
+	left:5px;
+	top:3px;
+	width:32px;
+}
+
+.ux-start-menu .ux-start-menu-tl ,.ux-start-menu .x-window-bwrap .x-panel-nofooter{
+	background:url(../images/startmenu/v-top-bottom-bg.png) no-repeat  !important;
+	height:98px;
+}
+.ux-start-menu .x-window-bwrap .ux-start-menu-ml{
+	background:url(../images/startmenu/bg_sm.png) no-repeat  !important;
+}
+.ux-start-menu .x-window-bwrap .x-panel-nofooter{
+	background-position:-336px 0  !important;
+	height:18px ;
+}
+
+.ux-start-menu .user-face .user-face-img{
+	background: none;
+	float:left;
+	position:absolute;
+	right:40px;
+	top:6px;
+	height:48px;
+	width:48px;
+	display:block;
+	padding:0;
+	cursor:pointer;
+	z-index:100
+
+}
+.ux-start-menu .x-window-header-text{
+	line-height:52px !important;
+	font-size:12px !important;
+	margin-left:10px;
+	font-weight:normal;
+	display:block;
+	position:absolute;
+	color:white;
+	right:45px;
+	top:50px;
+
+}
+.ux-start-menu .x-window-bwrap{
+	overflow:visible;
+}
+.ux-start-menu .ux-start-menu-tools-panel{
+	width:110px;
+	left:210px;
+	top:70px;
+}
+.ux-start-menu .ux-start-menu-tools-panel ul.x-menu-list{
+	padding:0;
+}
+.ux-start-menu .ux-start-menu-tools-panel ul.x-menu-list li{
+	padding:0;
+	height:30px;
+	width:106px;
+	margin-bottom:4px;
+}
+.ux-start-menu .ux-start-menu-tools-panel ul.x-menu-list .x-menu-sep-li{
+	height:auto;
+}
+
+.ux-start-menu-tools-panel .x-menu-item-active ,
+.ux-start-menu-bottom-panel .x-menu-item-active{
+	border:none ;
+	background:transparent url(../images/startmenu/button-bg.png) no-repeat 0 0 ;
+	}
+.ux-start-menu-tools-panel .x-menu-item-active a.x-menu-item ,
+.ux-start-menu-bottom-panel .x-menu-item-active a.x-menu-item{
+	border:none;
+}
+.ux-start-menu-tools-panel .x-menu-item-icon,
+.ux-start-menu-bottom-panel .x-menu-item-icon{
+	width:24px;height:24px;
+	top:2px
+} 
+.ux-start-menu-tools-panel a.x-menu-item ,
+.ux-start-menu-bottom-panel a.x-menu-item{
+	padding:6px 21px 6px 35px;
+}
+
+
+.ux-start-menu .ux-start-menu-apps-panel{
+	top:0;
+	width:190px;
+	left:10px;
+	background-color:transparent;
+	border:none
+
+}
+.ux-start-menu .ux-start-menu-apps-panel .x-menu-list{
+	padding:0;
+}
+.ux-start-menu-apps-panel {
+	border:1px solid #1e2124;
+}
+.ux-start-menu-apps-panel .x-menu-list-item{
+	padding:0;
+}
+.ux-start-menu-apps-panel .x-menu-item-active {
+
+	background:transparent url(../images/startmenu/button-bg.png) no-repeat -107px 0 !important;
+	border:none;
+	margin:0
+	
+}
+.ux-start-menu-apps-panel .x-menu-item-active a.x-menu-item{
+	border:none;
+	margin:0;
+}
+.ux-start-menu-apps-panel .x-menu-item-active .x-menu-item-text{
+	color:#000;
+}
+.ux-start-menu-apps-panel a.x-menu-item {
+	height:26px;
+	padding:10px 0 2px 42px;
+	position:relative;
+
+}
+/*开始菜单底部面板*/
+.ux-start-menu .ux-start-menu-bottom-panel {
+	background:none;
+	position:absolute;
+	bottom:-8px;
+	right:10px;
+	top:auto !important;
+	left:auto !important;
+	height:30px;
+	width:100px;
+	overflow:visible;
+}
+.ux-start-menu-bottom-panel .x-menu-item-active{
+	margin:0
+}
+.ux-start-menu-bottom-panel  .x-menu-item-active  a.x-menu-item{
+	border:none;
+	margin:0;
+	
+}
+.ux-start-menu-bottom-panel .x-menu-item{
+	text-align:left !important;
+}
+.ux-start-menu-bottom-panel .x-menu-list{
+	padding:0
+}
+.ux-start-menu-bottom-panel .strat-bottomPanel-reLoginout{
+	position:absolute;
+	left:-8px;
+	top:-30px;
+	width:106px !important;
+}
+.ux-start-menu-bottom-panel .strat-bottomPanel-loginOut{
+	position:absolute;
+	left:-8px;
+	top:0;
+	width:106px !important;
+}
+.ux-start-menu-bottom-panel .strat-bottomPanel-lock{/*LGL新增(2011-04-06):追加锁屏*/
+	position:absolute;
+	left:-8px;
+	top:-60px;
+	width:106px !important;
+}
+/*ie hack*/
+ .ux-start-menu-tools-panel .x-menu-item-icon{
+	top:1px;
+}
+.ext-ie .ux-start-menu-bottom-panel .strat-bottomPanel-loginOut .x-menu-item-icon,
+.ext-ie .ux-start-menu-bottom-panel .strat-bottomPanel-reLoginout .x-menu-item-icon,
+.ext-ie .ux-start-menu-bottom-panel .strat-bottomPanel-lock .x-menu-item-icon{
+	top:0px
+} 
+.ext-ie .ux-start-menu-bottom-panel .strat-bottomPanel-loginOut{
+	left:-218px;
+	height:28px !important;
+	padding:1px 0 ;
+}
+.ext-ie .ux-start-menu-bottom-panel .strat-bottomPanel-reLoginout{
+	left:-113px;
+	height:28px !important;
+	padding:1px 0 ;
+}
+.ext-ie .ux-start-menu-bottom-panel .strat-bottomPanel-lock{
+	left:-7px;
+	height:28px !important;
+	padding:1px 0 ;
+}
+.ux-start-menu { 
+	background: transparent none !important; border: 0px none !important; padding: 0 !important;
+	width: 334px;
+	overflow:visible !important;
+}
+.ux-start-menu-tl .x-window-header { color: #f1f1f1; font: bold 12px tahoma,arial,verdana,sans-serif; padding: 5px 0 4px 0; }
+.x-panel-tl .x-panel-icon, .ux-start-menu-tl .x-panel-icon { background-position: 0pt 4px; background-repeat: no-repeat; padding-left: 0 !important; }
+
+.ux-start-menu-tl {  
+
+ position:absolute;left:0;top:-30px ;width:334px;height:98px;
+ }
+ 
+.ux-start-menu-tr { padding-right: 6px; }
+.ux-start-menu-tc { overflow: hidden; zoom: 1; }
+.ux-start-menu-ml { padding-left:6px; zoom:1; }
+.ux-start-menu-bc {  zoom:1; }
+.ux-start-menu-bc .x-window-footer { padding-bottom:6px; zoom:1; font-size:0; line-height:0; }
+.ux-start-menu-bl { padding-left:6px; zoom:1; }
+.ux-start-menu-br { padding-right:6px; zoom:1; }
+
+.x-panel-nofooter .ux-start-menu-bc { height:6px; }
+.ux-start-menu-splitbar-h { background-color:#d0d0d0; }
+.ux-start-menu-bwrap { background:transparent none !important; border:0px none; }
+.ux-start-menu-body { background:transparent none !important; border:0px none; }
+.ux-start-menu-apps-panel { background:#ffffff none; border:1px solid #99bbe8; }
+
+
+
+.ux-start-menu-apps-panel .x-menu-item-active {  padding:0 ; }
+.x-menu .ux-start-menu-apps-panel a.x-menu-item {
+	color:#000000 !important;	
+}
+
+.ux-start-menu-tools-panel ul.x-menu-list li.x-menu-list-item a.x-menu-item {
+	color:#ffffff;
+}
+
+.ux-start-menu-tools-panel ul.x-menu-list li.x-menu-list-item .x-menu-item-active a.x-menu-item {
+	color:#000000;	
+}
+
+/*开始菜单底部面板*/
+/*开始按钮start*/
+.ext-webkit .ux-taskbar-start .x-btn-left i ,
+.ext-webkit .ux-taskbar-start .x-btn-right i{
+	display:none;
+}
+
+#ux-taskbar-start{
+	width:58px !important;
+}
+.start {
+	background-image: url(../images/taskbar/start-btn-35.png) !important;
+	  background-position: left top !important;
+	width:40px !important;
+	height:35px !important;
+	padding:0 !important;
+}
+
+.ux-taskbar-start .x-btn-menu-active .start,
+.ux-taskbar-start .x-btn-over .start{
+	background-position:-40px 0 !important
+}
+
+/*开始按钮end*/
+/*新开始菜单样式 end*/
+
+
+
+
+/***************************************************************************************************************
+*******************************************************
+覆盖EXT官方样式 开始
+*******************************************************
+***************************************************************************************************************/
+/* Begin: toolbar */
+.x-toolbar {
+	background:#ececec url(../images/toolbar/gray-bg.gif) repeat-x ;
+}
+.x-window-bbar .x-toolbar {
+	border:1px solid #a0a0a0 ;
+	
+}
+.x-panel-bbar .x-toolbar {
+	border:1px solid #999;
+	border-top:1px solid #a0a0a0 ;
+}
+.x-window-tbar .x-toolbar {
+	border:1px solid #999;
+	border-bottom:0px solid #a0a0a0 !important;/*yzh*/
+}
+.x-panel-tbar .x-toolbar {
+	border-bottom:1px solid #a0a0a0 !important;
+	border-left:0 none;
+	border-right:0 none;
+}
+.x-panel-tbar-noheader .x-toolbar, .x-panel-mc .x-panel-tbar .x-toolbar {
+	border-bottom:0 none;
+	border-top:1px solid #999;
+}
+.x-toolbar .x-btn-over .x-btn-left{
+	/* background:url(../images/toolbar/tb-btn-sprite.gif) no-repeat 0 0px; */
+	background:#3399ff none;
+}
+.x-toolbar .x-btn-over .x-btn-right{
+	/* background:url(../images/toolbar/tb-btn-sprite.gif) no-repeat 0 -21px; */
+	background:#3399ff none;
+}
+.x-toolbar .x-btn-over .x-btn-center{
+	/* background:url(../images/toolbar/tb-btn-sprite.gif) repeat-x 0 -42px; */
+	background:#3399ff none;
+}
+.x-toolbar .x-btn-over .x-btn-text {
+	
+}
+/*.x-window-tbar .x-toolbar {
+	background:#a5acb4 url(../images/toolbar/bg.gif) repeat-x !important;
+	border:1px solid #222;
+	border-bottom:0px none !important;
+}
+.x-window-bbar .x-toolbar {
+	background:#a5acb4 url(../images/toolbar/bg.gif) repeat-x !important;
+	border:1px solid #222;
+	border-top:0px none !important;
+}*/
+.x-toolbar .xtb-sep {
+	background-image:url(../images/grid/grid-split.gif) !important;/*yzh*/
+}
+/* End: toolbar */
+
+/*x-panel 样式开始 分享的左边面板样式*/
+.x-panel-header {
+	background-image:url(../images/panel/white-top-bottom.gif);/*主题区别*/
+}
+.x-panel-tl, .x-panel-tr,
+ .x-panel-bl, .x-panel-br {
+	background-image:url(../images/panel/corners-sprite.gif);
+	border-bottom-color:#D0D0D0;
+}
+.x-panel-tc {
+background-image:url(../images/panel/top-bottom.gif);
+}
+.x-panel-ml {
+	background-color:#FFFFFF;
+	background-image:url(../images/panel/left-right.gif);
+}
+.x-panel-mr {
+background-image:url(../images/panel/left-right.gif);
+}
+.x-panel-bc {
+background-image:url(../images/panel/top-bottom.gif);
+}
+.x-panel-mc {
+background-color:#F1F1F1;
+}
+.x-panel-tl .x-panel-header {
+color:#333333;
+}
+/*x-panel 样式 结束*/
+/* Begin: panel */
+.x-panel-tl .x-panel-icon, .x-window-tl .x-panel-icon {
+	background-position:0 4px;
+}
+.x-panel-header {
+	border:0px none;
+	color:#333;
+	padding:5px 3px 5px 5px;
+}
+.x-panel-noborder .x-panel-header-noborder{
+	border-bottom-color:#999;/*yzh*/
+}
+.x-panel-body {
+	border-color:#a0a0a0;
+	
+}
+.x-panel-footer {
+	background-color:#f1f1f1;
+	border-top:1px solid #ccc;
+}
+.x-panel-header {
+	background:url(../images/panel/header-bg.gif) repeat-x scroll 0 0 #000000;
+	border:0 none;
+	padding:5px 3px 5px 5px;
+}
+
+/* End: panel */
+
+/* Begin: window */
+
+.x-tool {
+	background-image:url(../images/window/tool-sprites.gif);
+}
+
+.x-window-tl .x-window-header {
+	color:#ffffff;
+}
+.x-window-tl {
+	background: transparent url(../images/window/left-corners.png) no-repeat 0 0;
+	padding-left:6px;
+    zoom:1;
+    z-index:1;
+    position:relative;
+}
+.x-window-tl .x-window-header {
+	padding-bottom:2px;
+	padding-top:1px;
+}
+.x-window-header-text {
+	line-height:21px;;
+}
+.x-window-tc {
+	background: transparent url(../images/window/top-bottom.png) repeat-x 0 0;
+	overflow:hidden;
+    zoom:1;
+}
+.x-window-tr {
+	background: transparent url(../images/window/right-corners.png) no-repeat right 0;
+	padding-right:6px;
+}
+.x-window-bl {
+	background: transparent url(../images/window/left-corners.png) no-repeat 0 bottom;
+	padding-left:6px;
+    zoom:1;
+}
+.x-window-bc {
+	background: transparent url(../images/window/top-bottom.png) repeat-x 0 bottom;
+    zoom:1;
+}
+.x-window-br {
+	background: transparent url(../images/window/right-corners.png) no-repeat right bottom;
+	padding-right:6px;
+    zoom:1;
+}
+.x-window-ml {
+	background: transparent url(../images/window/left-right.png) repeat-y 0 0;
+	padding-left:6px;
+    zoom:1;
+}
+.x-window-mr {
+	background: transparent url(../images/window/left-right.png) repeat-y right 0;
+	padding-right:6px;
+    zoom:1;
+}
+.x-window-mc, .x-window-plain .x-window-mc {
+	background-color:#fff ;
+	background-image:none;
+}
+body.x-body-masked .x-window-plain .x-window-mc {
+	background-color:#fff ;
+}
+.x-panel{
+	border-color:#999  !important;
+}
+.x-window-body {
+	border:1px solid #999;/*yzh*/
+}
+.x-window-maximized .x-window-mc {
+	border-bottom:0 none !important;
+	border-left:0 none !important;
+	border-right:0 none !important;
+}
+.x-window-proxy {
+	background:#333 none;
+}
+
+.x-window-header .x-tool {
+	background:transparent url(../images/panel/tool-sprites.png) no-repeat;
+	margin-left:0;
+}
+
+
+/* 1 */
+.x-window-header .x-tool-close {
+	background-position:0 -0;
+	height:18px;
+	width:44px;
+}
+.x-window-header .x-tool-close-over { background-position:-44px 0; }
+
+/* 2 */
+.x-window-header .x-tool-minimize {
+	background-position:-36px -18px;
+	height:18px;
+	width:26px;
+}
+.x-window-header .x-tool-minimize-over { background-position:-62px -18px; }
+
+/* 3 */
+.x-window-header .x-tool-maximize {
+	background-position:-38px -36px;
+	height:18px;
+	width:25px;
+}
+.x-window-header .x-tool-maximize-over { background-position:-63px -36px; }
+
+/* 4 */
+.x-window-header .x-tool-restore {
+	background-position:-38px -54px;
+	height:18px;
+	width:25px;
+}
+.x-window-header .x-tool-restore-over { background-position:-63px -54px; }
+
+/* 5 */
+.x-window-header .x-tool-up {
+	background-position:-38px -72px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-up-over { background-position:-63px -72px; }
+
+/* 6 */
+.x-window-header .x-tool-down {
+	background-position:-38px -90px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-down-over { background-position:-63px -90px; }
+
+/* 7 */
+.x-window-header .x-tool-gear {
+	background-position:-38px -108px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-gear-over { background-position:-63px -108px; }
+
+/* 8 */
+.x-window-header .x-tool-left {
+	background-position:-38px -126px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-left-over { background-position:-63px -126px; }
+
+/* 9 */
+.x-window-header .x-tool-right {
+	background-position:-38px -144px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-right-over { background-position:-63px -144px; }
+
+/* 10 */
+.x-window-header .x-tool-pin {
+	background-position:-38px -162px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-pin-over { background-position:-63px -162px; }
+
+/* 11 */
+.x-window-header .x-tool-unpin {
+	background-position:-38px -180px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-unpin-over { background-position:-63px -180px; }
+
+
+/* 16 */
+.x-window-header .x-tool-refresh {
+	background-position:-38px -270px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-refresh-over { background-position:-63px -270px; }
+
+/* 17 */
+.x-window-header .x-tool-plus {
+	background-position:-38px -288px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-plus-over { background-position:-63px -288px; }
+
+/* 18 */
+.x-window-header .x-tool-minus {
+	background-position:-38px -306px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-minus-over { background-position:-63px -306px; }
+
+/* 19 */
+.x-window-header .x-tool-search {
+	background-position:-38px -324px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-search-over { background-position:-63px -324px; }
+
+/* 20 */
+.x-window-header .x-tool-save {
+	background-position:-38px -342px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-save-over { background-position:-63px -342px; }
+
+/* 21 */
+.x-window-header .x-tool-help {
+	background-position:-38px -360px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-help-over { background-position:-63px -360px; }
+
+/* 22 */
+.x-window-header .x-tool-print {
+	background-position:-38px -378px;
+	height:18px;
+	width:25px;
+        margin-right: 3px;
+}
+.x-window-header .x-tool-print-over { background-position:-63px -378px; }
+
+
+
+.x-panel-ghost {
+    background:#333;
+    z-index:12000;
+    overflow:hidden;
+    position:absolute;
+    left:0;top:0;
+    opacity:.65;
+    -moz-opacity:.65;
+    filter:alpha(opacity=65);
+}
+.x-panel-ghost .x-window-tl {
+    border-bottom:1px solid #222;
+}
+.x-panel-ghost ul {
+    border:1px solid #222;
+    border-top:0 none;
+}
+/* End: window */
+/* Begin: tabs */
+.x-tab-panel-header, .x-tab-panel-footer {
+	background:#ececec none;
+}
+ul.x-tab-strip-top {
+	/*background:#ececec url(../images/tabs/tab-strip-bg.gif) repeat-x;*/
+	background:#ececec url(../images/toolbar/gray-bg.gif) repeat-x !important;/*yzh*/
+	border-bottom:1px solid #a0a0a0;
+}
+.x-tab-strip-top .x-tab-right {
+	background:transparent url(../images/tabs/tabs-sprite.gif) no-repeat 0 -51px;padding-left:10px;
+	}
+.x-tab-strip-top .x-tab-left {
+	background:transparent url(../images/tabs/tabs-sprite.gif) no-repeat right -351px;
+	padding-right:10px;
+}
+.x-tab-strip-top .x-tab-strip-inner {
+	background:transparent url(../images/tabs/tabs-sprite.gif) repeat-x 0 -201px;
+	
+}
+.x-tab-strip span.x-tab-strip-text {
+	color:#333;
+}
+.x-tab-strip-active span.x-tab-strip-text {
+	color:#000;
+}
+.x-tab-panel-body {
+	border-color:#ccc;
+}
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close {
+	background-image:url(../images/tabs/tab-close.png);
+}
+.x-tab-strip .x-tab-strip-closable a.x-tab-strip-close:hover {
+	background-image:url(../images/tabs/tab-close.png);
+}
+
+.x-tab-strip-closable {
+    position:relative;
+}
+
+.x-tab-strip-closable .x-tab-left {
+    padding-right:19px;
+}
+/* End: tabs */
+/* Begin: button */
+.x-btn-left {
+	
+}
+.x-btn-right {
+	
+}
+.x-btn-center {
+	
+}
+/* End: button */
+/* Begin: layout */
+.x-layout-collapsed {
+	border:0 none;
+}
+.x-layout-split {
+	background-color:#222;
+}
+.x-layout-collapsed {
+	
+	
+}
+/* End: layout */
+
+/***************************************************************************************************************
+*******************************************************
+覆盖EXT官方样式 结束
+*******************************************************
+***************************************************************************************************************/
+
